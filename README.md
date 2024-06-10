@@ -18,16 +18,16 @@ File: conswatermark.py
 This file is responsible for applying watermarks to images. It listens for messages from Kafka, processes images, applies watermarks, and replaces the original images in the database.
 
 2. Usage
-a- Start the server by running server.py.
-b- Run consmodel.py to initialize the Kafka consumer and the object detection model.
-c- Execute conswatermark.py to apply watermarks to images and replace them in the database.
-d- Make sure to configure the Kafka broker settings and database connection details in the respective files before running the system.
+  1. Start the server by running server.py.
+  2. Run consmodel.py to initialize the Kafka consumer and the object detection model.
+  3. Execute conswatermark.py to apply watermarks to images and replace them in the database.
+Make sure to configure the Kafka broker settings and database connection details in the respective files before running the system.
 
 3. Dependencies
-confluent_kafka: Python client for Apache Kafka
-opencv-python: OpenCV library for computer vision tasks
-Pillow: Python Imaging Library for image processing
-Other standard Python libraries
+  1. confluent_kafka: Python client for Apache Kafka
+  2. opencv-python: OpenCV library for computer vision tasks
+  3. Pillow: Python Imaging Library for image processing
+  4. Other standard Python libraries
 
 4. Contributing
 Contributions are welcome! Please feel free to open issues for any bugs or feature requests, and submit pull requests for improvements.
