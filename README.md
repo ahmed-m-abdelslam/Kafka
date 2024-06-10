@@ -1,6 +1,32 @@
-Server:
-File run server and creat produser 
-Consmodel:
-File create consumer and object detection model
-Conswatermark:
-File to makeing watermark on pictures and reblace it in database
+Object Detection and Watermarking System
+This repository contains code for an object detection and watermarking system using Kafka for message passing and image processing libraries like OpenCV and PIL.
+
+Components
+1. Server
+File: server.py
+
+This file contains the code for running the server. It listens for HTTP requests and handles storing watermarked images in the database.
+
+2. Consmodel
+File: consmodel.py
+
+This file includes the consumer code responsible for receiving messages from Kafka topics. It utilizes an object detection model to identify objects in images.
+
+3. Conswatermark
+File: conswatermark.py
+
+This file is responsible for applying watermarks to images. It listens for messages from Kafka, processes images, applies watermarks, and replaces the original images in the database.
+
+Usage
+Start the server by running server.py.
+Run consmodel.py to initialize the Kafka consumer and the object detection model.
+Execute conswatermark.py to apply watermarks to images and replace them in the database.
+Make sure to configure the Kafka broker settings and database connection details in the respective files before running the system.
+
+Dependencies
+confluent_kafka: Python client for Apache Kafka
+opencv-python: OpenCV library for computer vision tasks
+Pillow: Python Imaging Library for image processing
+Other standard Python libraries
+Contributing
+Contributions are welcome! Please feel free to open issues for any bugs or feature requests, and submit pull requests for improvements.
