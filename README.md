@@ -41,6 +41,3 @@ Make sure to configure the Kafka broker settings and database connection details
 
 Contributions are welcome! Please feel free to open issues for any bugs or feature requests, and submit pull requests for improvements.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
